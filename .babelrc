@@ -24,6 +24,12 @@
     "@babel/plugin-proposal-object-rest-spread",
     "@babel/plugin-transform-runtime",
     "transform-react-remove-prop-types",
+    [
+      "transform-define",
+      {
+        "filePath": "scripts/define.js"
+      }
+    ]
   ],
   "env": {
     "cjs": {
