@@ -7,72 +7,96 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
+
+var _createClass2 = _interopRequireDefault(require("../polyfills/createClass"));
+
+var _possibleConstructorReturn2 = _interopRequireDefault(require("../polyfills/possibleConstructorReturn"));
+
+var _objectGetPrototypeOf = _interopRequireDefault(require("../polyfills/objectGetPrototypeOf"));
+
+var _inherits2 = _interopRequireDefault(require("../polyfills/inherits"));
+
+var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized"));
+
 var _react = _interopRequireDefault(require("react"));
 
 var _propTypes = _interopRequireDefault(require("prop-types"));
 
-class Anchors extends _react.default.PureComponent {
-  constructor(props) {
-    super(props);
+var Anchors =
+/*#__PURE__*/
+function (_React$PureComponent) {
+  (0, _inherits2.default)(Anchors, _React$PureComponent);
+
+  function Anchors(props) {
+    var _this;
+
+    (0, _classCallCheck2.default)(this, Anchors);
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _objectGetPrototypeOf.default)(Anchors).call(this, props));
     var defaultCategory = props.categories.filter(function (category) {
       return category.first;
     })[0];
-    this.state = {
+    _this.state = {
       selected: defaultCategory.name
     };
-    this.handleClick = this.handleClick.bind(this);
+    _this.handleClick = _this.handleClick.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
+    return _this;
   }
 
-  handleClick(e) {
-    var index = e.currentTarget.getAttribute('data-index');
-    var _this$props = this.props,
-        categories = _this$props.categories,
-        onAnchorClick = _this$props.onAnchorClick;
-    onAnchorClick(categories[index], index);
-  }
+  (0, _createClass2.default)(Anchors, [{
+    key: "handleClick",
+    value: function handleClick(e) {
+      var index = e.currentTarget.getAttribute('data-index');
+      var _this$props = this.props,
+          categories = _this$props.categories,
+          onAnchorClick = _this$props.onAnchorClick;
+      onAnchorClick(categories[index], index);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
 
-  render() {
-    var _this = this;
+      var _this$props2 = this.props,
+          categories = _this$props2.categories,
+          color = _this$props2.color,
+          i18n = _this$props2.i18n,
+          icons = _this$props2.icons,
+          selected = this.state.selected;
+      return _react.default.createElement("div", {
+        className: "emoji-mart-anchors"
+      }, categories.map(function (category, i) {
+        var id = category.id,
+            name = category.name,
+            anchor = category.anchor,
+            isSelected = name == selected;
 
-    var _this$props2 = this.props,
-        categories = _this$props2.categories,
-        color = _this$props2.color,
-        i18n = _this$props2.i18n,
-        icons = _this$props2.icons,
-        selected = this.state.selected;
-    return _react.default.createElement("div", {
-      className: "emoji-mart-anchors"
-    }, categories.map(function (category, i) {
-      var id = category.id,
-          name = category.name,
-          anchor = category.anchor,
-          isSelected = name == selected;
-
-      if (anchor === false) {
-        return null;
-      }
-
-      return _react.default.createElement("span", {
-        key: id,
-        title: i18n.categories[id],
-        "data-index": i,
-        onClick: _this.handleClick,
-        className: "emoji-mart-anchor ".concat(isSelected ? 'emoji-mart-anchor-selected' : ''),
-        style: {
-          color: isSelected ? color : null
+        if (anchor === false) {
+          return null;
         }
-      }, _react.default.createElement("div", {
-        className: "emoji-mart-anchor-icon"
-      }, icons.categories[id]()), _react.default.createElement("span", {
-        className: "emoji-mart-anchor-bar",
-        style: {
-          backgroundColor: color
-        }
+
+        return _react.default.createElement("span", {
+          key: id,
+          title: i18n.categories[id],
+          "data-index": i,
+          onClick: _this2.handleClick,
+          className: "emoji-mart-anchor ".concat(isSelected ? 'emoji-mart-anchor-selected' : ''),
+          style: {
+            color: isSelected ? color : null
+          }
+        }, _react.default.createElement("div", {
+          className: "emoji-mart-anchor-icon"
+        }, icons.categories[id]()), _react.default.createElement("span", {
+          className: "emoji-mart-anchor-bar",
+          style: {
+            backgroundColor: color
+          }
+        }));
       }));
-    }));
-  }
-
-}
+    }
+  }]);
+  return Anchors;
+}(_react.default.PureComponent);
 
 exports.default = Anchors;
 Anchors.defaultProps = {
