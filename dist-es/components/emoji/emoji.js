@@ -1,8 +1,8 @@
 import _objectSpread from "@babel/runtime/helpers/objectSpread";
 import React from 'react';
-import data from '../../../data/all.json';
-import NimbleEmoji from './nimble-emoji';
-import { EmojiPropTypes, EmojiDefaultProps } from '../../utils/shared-props';
+import data from "../../../data/all.json";
+import NimbleEmoji from "./nimble-emoji";
+import { EmojiPropTypes, EmojiDefaultProps } from "../../utils/shared-props";
 
 var Emoji = function Emoji(props) {
   for (var k in Emoji.defaultProps) {

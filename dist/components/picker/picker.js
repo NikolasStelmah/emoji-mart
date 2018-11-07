@@ -9,17 +9,17 @@ exports.default = void 0;
 
 var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/objectSpread"));
 
-var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
+var _extends2 = _interopRequireDefault(require("../../polyfills/extends"));
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+var _createClass2 = _interopRequireDefault(require("../../polyfills/createClass"));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));
+var _possibleConstructorReturn2 = _interopRequireDefault(require("../../polyfills/possibleConstructorReturn"));
 
-var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));
+var _objectGetPrototypeOf = _interopRequireDefault(require("../../polyfills/objectGetPrototypeOf"));
 
-var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));
+var _inherits2 = _interopRequireDefault(require("../../polyfills/inherits"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -36,7 +36,7 @@ function (_React$PureComponent) {
 
   function Picker() {
     (0, _classCallCheck2.default)(this, Picker);
-    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Picker).apply(this, arguments));
+    return (0, _possibleConstructorReturn2.default)(this, (0, _objectGetPrototypeOf.default)(Picker).apply(this, arguments));
   }
 
   (0, _createClass2.default)(Picker, [{

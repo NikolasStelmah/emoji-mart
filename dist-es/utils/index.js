@@ -1,5 +1,5 @@
-import { buildSearch } from './data';
-import stringFromCodePoint from '../polyfills/stringFromCodePoint';
+import { buildSearch } from "./data";
+import stringFromCodePoint from "../polyfills/stringFromCodePoint";
 var _JSON = JSON;
 var COLONS_REGEX = /^(?:\:([^\:]+)\:)(?:\:skin-tone-(\d)\:)?$/;
 var SKINS = ['1F3FA', '1F3FB', '1F3FC', '1F3FD', '1F3FE', '1F3FF'];

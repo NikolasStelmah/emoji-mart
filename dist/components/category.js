@@ -11,13 +11,13 @@ var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/obje
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+var _createClass2 = _interopRequireDefault(require("../polyfills/createClass"));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));
+var _possibleConstructorReturn2 = _interopRequireDefault(require("../polyfills/possibleConstructorReturn"));
 
-var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));
+var _objectGetPrototypeOf = _interopRequireDefault(require("../polyfills/objectGetPrototypeOf"));
 
-var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));
+var _inherits2 = _interopRequireDefault(require("../polyfills/inherits"));
 
 var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/assertThisInitialized"));
 
@@ -40,7 +40,7 @@ function (_React$Component) {
     var _this;
 
     (0, _classCallCheck2.default)(this, Category);
-    _this = (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(Category).call(this, props));
+    _this = (0, _possibleConstructorReturn2.default)(this, (0, _objectGetPrototypeOf.default)(Category).call(this, props));
     _this.data = props.data;
     _this.setContainerRef = _this.setContainerRef.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));
     _this.setLabelRef = _this.setLabelRef.bind((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)));

@@ -1,4 +1,4 @@
-import store from './store';
+import store from "./store";
 var DEFAULTS = ['+1', 'grinning', 'kissing_heart', 'heart_eyes', 'laughing', 'stuck_out_tongue_winking_eye', 'sweat_smile', 'joy', 'scream', 'disappointed', 'unamused', 'weary', 'sob', 'sunglasses', 'heart', 'poop'];
 var frequently, initialized;
 var defaults = {};

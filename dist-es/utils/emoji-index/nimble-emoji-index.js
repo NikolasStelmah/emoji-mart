@@ -1,7 +1,7 @@
 import _classCallCheck from "@babel/runtime/helpers/classCallCheck";
-import _createClass from "@babel/runtime/helpers/createClass";
+import _createClass from "../../polyfills/createClass";
 import { getData, getSanitizedData, intersect } from '..';
-import { uncompress } from '../data';
+import { uncompress } from "../data";
 
 var NimbleEmojiIndex =
 /*#__PURE__*/

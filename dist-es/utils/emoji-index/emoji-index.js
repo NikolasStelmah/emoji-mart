@@ -1,5 +1,5 @@
-import data from '../../../data/all.json';
-import NimbleEmojiIndex from './nimble-emoji-index';
+import data from "../../../data/all.json";
+import NimbleEmojiIndex from "./nimble-emoji-index";
 var emojiIndex = new NimbleEmojiIndex(data);
 var emojis = emojiIndex.emojis,
     emoticons = emojiIndex.emoticons;

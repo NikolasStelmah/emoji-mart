@@ -1,14 +1,14 @@
 import _objectSpread from "@babel/runtime/helpers/objectSpread";
-import _extends from "@babel/runtime/helpers/extends";
+import _extends from "../../polyfills/extends";
 import _classCallCheck from "@babel/runtime/helpers/classCallCheck";
-import _createClass from "@babel/runtime/helpers/createClass";
-import _possibleConstructorReturn from "@babel/runtime/helpers/possibleConstructorReturn";
-import _getPrototypeOf from "@babel/runtime/helpers/getPrototypeOf";
-import _inherits from "@babel/runtime/helpers/inherits";
+import _createClass from "../../polyfills/createClass";
+import _possibleConstructorReturn from "../../polyfills/possibleConstructorReturn";
+import _getPrototypeOf from "../../polyfills/objectGetPrototypeOf";
+import _inherits from "../../polyfills/inherits";
 import React from 'react';
-import data from '../../../data/all.json';
-import NimblePicker from './nimble-picker';
-import { PickerPropTypes, PickerDefaultProps } from '../../utils/shared-props';
+import data from "../../../data/all.json";
+import NimblePicker from "./nimble-picker";
+import { PickerPropTypes, PickerDefaultProps } from "../../utils/shared-props";
 
 var Picker =
 /*#__PURE__*/

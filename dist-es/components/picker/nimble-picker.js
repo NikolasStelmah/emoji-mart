@@ -1,19 +1,19 @@
 import _objectSpread from "@babel/runtime/helpers/objectSpread";
 import _classCallCheck from "@babel/runtime/helpers/classCallCheck";
-import _createClass from "@babel/runtime/helpers/createClass";
-import _possibleConstructorReturn from "@babel/runtime/helpers/possibleConstructorReturn";
-import _getPrototypeOf from "@babel/runtime/helpers/getPrototypeOf";
-import _inherits from "@babel/runtime/helpers/inherits";
+import _createClass from "../../polyfills/createClass";
+import _possibleConstructorReturn from "../../polyfills/possibleConstructorReturn";
+import _getPrototypeOf from "../../polyfills/objectGetPrototypeOf";
+import _inherits from "../../polyfills/inherits";
 import _assertThisInitialized from "@babel/runtime/helpers/assertThisInitialized";
-import '../../vendor/raf-polyfill';
+import "../../vendor/raf-polyfill";
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as icons from '../../svgs';
-import store from '../../utils/store';
-import frequently from '../../utils/frequently';
-import { deepMerge, measureScrollbar } from '../../utils';
-import { uncompress } from '../../utils/data';
-import { PickerPropTypes, PickerDefaultProps } from '../../utils/shared-props';
+import * as icons from "../../svgs";
+import store from "../../utils/store";
+import frequently from "../../utils/frequently";
+import { deepMerge, measureScrollbar } from "../../utils";
+import { uncompress } from "../../utils/data";
+import { PickerPropTypes, PickerDefaultProps } from "../../utils/shared-props";
 import { Anchors, Category, Preview, Search } from '..';
 var I18N = {
   search: 'Search',

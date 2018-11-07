@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getData, getSanitizedData, unifiedToNative } from '../../utils';
-import { uncompress } from '../../utils/data';
-import { EmojiPropTypes, EmojiDefaultProps } from '../../utils/shared-props';
+import { getData, getSanitizedData, unifiedToNative } from "../../utils";
+import { uncompress } from "../../utils/data";
+import { EmojiPropTypes, EmojiDefaultProps } from "../../utils/shared-props";
 
 var _getData = function _getData(props) {
   var emoji = props.emoji,

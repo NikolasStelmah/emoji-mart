@@ -11,13 +11,13 @@ var _objectSpread2 = _interopRequireDefault(require("@babel/runtime/helpers/obje
 
 var _classCallCheck2 = _interopRequireDefault(require("@babel/runtime/helpers/classCallCheck"));
 
-var _createClass2 = _interopRequireDefault(require("@babel/runtime/helpers/createClass"));
+var _createClass2 = _interopRequireDefault(require("../polyfills/createClass"));
 
-var _possibleConstructorReturn2 = _interopRequireDefault(require("@babel/runtime/helpers/possibleConstructorReturn"));
+var _possibleConstructorReturn2 = _interopRequireDefault(require("../polyfills/possibleConstructorReturn"));
 
-var _getPrototypeOf2 = _interopRequireDefault(require("@babel/runtime/helpers/getPrototypeOf"));
+var _objectGetPrototypeOf = _interopRequireDefault(require("../polyfills/objectGetPrototypeOf"));
 
-var _inherits2 = _interopRequireDefault(require("@babel/runtime/helpers/inherits"));
+var _inherits2 = _interopRequireDefault(require("../polyfills/inherits"));
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -32,7 +32,7 @@ function (_React$PureComponent) {
 
   function NotFound() {
     (0, _classCallCheck2.default)(this, NotFound);
-    return (0, _possibleConstructorReturn2.default)(this, (0, _getPrototypeOf2.default)(NotFound).apply(this, arguments));
+    return (0, _possibleConstructorReturn2.default)(this, (0, _objectGetPrototypeOf.default)(NotFound).apply(this, arguments));
   }
 
   (0, _createClass2.default)(NotFound, [{
