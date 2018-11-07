@@ -27,7 +27,7 @@ var EmojiDefaultProps = {
   forceSize: false,
   tooltip: false,
   backgroundImageFn: function backgroundImageFn(set, sheetSize) {
-    return "https://unpkg.com/emoji-datasource-".concat(set, "@").concat(EMOJI_DATASOURCE_VERSION, "/img/").concat(set, "/sheets-256/").concat(sheetSize, ".png");
+    return "https://unpkg.com/emoji-datasource-".concat(set, "@").concat("4.0.4", "/img/").concat(set, "/sheets-256/").concat(sheetSize, ".png");
   },
   onOver: function onOver() {},
   onLeave: function onLeave() {},
